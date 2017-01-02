@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+// Full application font style
+h1,h2,h3,p {
+  font-family: "Hind", sans-serif;
+}
+
+//Navbar style
+
+.brand-button {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+
+.navbar-nav {
+  // Aligns top margin of nav links with brand spacing
+  margin: 3px;
+}
+
+.navbar-form {
+  // Aligns search form with rest of links
+  margin: 11px;
+}
+
+
+// Home page background
+.home-callout{
+  background-image: image-url("scenejap.jpg");
+}
+
+.navbar-inverse {
+  margin: 0px;
+}
+
+.home-callout .h1{ //Need to fix this!
+  color: white;
+  text-shadow: 3px, 2px, black;
+}
