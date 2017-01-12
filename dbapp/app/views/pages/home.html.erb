@@ -1,22 +1,51 @@
-<div class= "home-callout container-fluid">
-  <h1> Hello, and welcome to a beginner's database web application! </h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quas, minus, officiis, 
-  voluptas aliquid libero explicabo pariatur eius accusamus perferendis deleniti unde error debitis 
-  maiores et qui ratione optio sapiente. </p>
-
-
-  
-  <div class="col-md-6 home-well-btn">  
-    <div class = "well">
-      <h2 class= "text-center"> Index Page </h2>
-        <%= link_to "Visit the Index Page", "#", class: "btn btn-default btn-lg btn-block" %>
+<div class="full-home-div">  
+  <div class="header">
+    <div id="header-text" > <!--Add an id to this div -->
+      <h1>A BEGINNER'S WEB APP </h1>
+      <h2> A database of random stuff</h2>
     </div>
   </div>
   
-  <div class="col-md-6">
-    <div class = "well">
-      <h2 class = "text-center"> Placeholder text</h2>
-       <%= link_to "Placeholder", "#", class: "btn btn-default btn-lg btn-block" %>
+  <div class="partner" > <!--Add a class to this div -->
+    <%= link_to "#", class: "powered-brand" do %>
+      <i class= "fa fa-power-off"></i>
+      Powered by Rails.
+    <% end %>
+  </div>
+  
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="col-md-12">
+          <div class= "sub-header text-center">
+            <h3> Select The Database You're Interested In </h3>
+            <p> </p>
+          </div>
+        <div class="value-props">  
+          <div class = "prop-container">
+            <div class="prop left-prop">
+              <i class ="fa fa-industry"></i>
+              <h2>GPU Manufacturers</h2>
+              <p> Browse through a list of GPU manufacturers. </p>
+            </div>
+      
+            <div class="prop right-prop">
+              <i class ="fa fa-database"></i>
+              <h2>GPU Poducts</h2>
+              <p> Browse through a list of GPU products </p>
+            </div>
+          </div> <!-- prop-container close -->
+        </div> <!-- value-props -->
+      </div> <!-- col -->  
+    </div> <!--row--> 
+  </div> <!-- main -->
+  
+  <div class="container-fluid">
+    <div class="row footer">
+      <div class="col-md-12">
+        <div class ="footer-text">
+          <a class= "footer-nav" href = "#"><p> arac </p></a> 
+        </div>
+      </div>
     </div>
   </div>
 </div>
