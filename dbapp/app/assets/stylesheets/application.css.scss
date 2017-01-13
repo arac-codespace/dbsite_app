@@ -19,169 +19,210 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body { 
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+// Home Page Font Style
 .full-home-div {
   color: white;
   font-family: 'Quicksand', sans-serif;
     h1 {
-      font-size: 70px;
+      font-size: 500%; //70px
     }
     h2 {
-      font-size: 28px;
+      font-size: 225%; //28px
     }
     h3 {
-      font-size: 28px;
+      font-size: 24px; //24px
     }
     p {
       font-size: 16px;
     }
 }
 
-// //Navbar style
+// //Navbar Style
+
+// Logo button; Unstyled to take on inverse-nav color
 .brand-button {
   border-color: transparent;
   background-color: transparent;
 }
 
-.form-control:focus {
-  border-color: orange;
-}
-
-.btn-default:hover {
-  color: orange;
-  background-color: white;
-  border-color: orange;
-}
-
+// Navbar margin
 .navbar-inverse {
   margin: 0px;
+    // Text color
+    .navbar-nav > li > a:hover,
+    .navbar-brand:hover {
+      color: orange;
+    }
+    // Submit button styling
+    .btn-default:hover {
+      color: orange;
+      background-color: white;
+      border-color: orange;
+    }
+    // Search form border glow
+    .form-control:focus {
+      border-color: orange;
+    }
+    .navbar-nav {
+      // Aligns top margin of nav links with brand spacing
+      margin: 3px;
+    }
+    .navbar-form {
+    // Aligns search form with rest of links
+      margin: 11px;
+    }
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: orange;
-}
 
-.navbar-inverse .navbar-brand:hover {
-  color: orange;
-}
+// < Home Page styling >
 
-.navbar-nav {
-  // Aligns top margin of nav links with brand spacing
-  margin: 3px;
-}
-
-.navbar-form {
-  // Aligns search form with rest of links
-  margin: 11px;
-}
-
-body { // Page Reset
-  background-color: #FFF;
-  margin: 0;
-  padding: 0;
-}
-
+// Header Image and Text Styling
 .header {
   background-image: url("hard-disk.jpg"); 
   background-position: 0% 50%; // Position of the image.  Accepts other values.
   background-repeat: no-repeat;
   background-size: cover; //Image size settings.  
-  height: 210px;
+  height: 250px;
   width: 100%; //Width of element box.
-}
-
-#header-text {
-  margin: 0 auto; //Browser calculates margin
-  position: relative;
-  text-align: center;
-  top: 25%;
-  width: 65%;
-}
-
-.partner {
-  padding: 20px;
-  text-align: center;
   margin: 0 auto;
-  border-bottom: 1px solid #eeeeee;
+    #header-text {
+      text-align: center;
+      // Text opaque 'shadow'
+      background-color: rgba(1,1,1,0.2);
+      // Extends 'shadow' across page
+      margin: 0 -15px;
+      padding: 5px 0;
+      position: relative;
+      top: 14%;
+        h1 {
+          // Adjusts position between header h1 and p.
+          margin-bottom: -20px;
+        }
+    }
 }
 
-.partner img {
-  position: relative;
-  top: 6px;
-}
+// Middle partners/powered div
+.partner {
+  padding: 20px; //Adds 20px white space
+  text-align: center; // Centers text
+  border-top: 5px solid #222222;
+  padding: 5px 0px;
+  background-color: #ffffff;
+    a:hover {
+      text-decoration: none;
+      color: orange;
+    }
+  }
 
-.aa-logo {
-  padding-left: 6px;
-}
+// Main body
 
-// main div
+// Full "body" gradient
 .main {
   background: #141E30; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  // padding-bottom: 100px;
+  height: 440px;
+    // mid-header text spacing
+    .mid-header {
+      margin: 35px 0 35px 0;
+    }
 }
 
-
-.sub-header {
-  margin: 20px;
-}
-
-.prop {
+// Main body props
+.left-prop, .right-prop {
   border: 5px solid #FFF;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 40px 0px;
   text-align: center;
-  display: inline-block;
-  margin: 0 auto;
   width: 45%;
-  height: 250px;
+    .btn-primary:hover {
+      background-color: orange;
+    }
 }
 
 .left-prop {
   float: left;
   margin-left: 20px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+    .fa-industry {
+      font-size: 60px;
+      color: white;
+    }
+    p {
+      margin: 10px 0px;
+    }
 }
 
 .right-prop {
   float: right;
   margin-right: 20px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+    .fa-database {
+      font-size: 60px;
+      color: white;
+    }
+    p {
+      margin: 10px 0px;
+    }
 }
 
-.prop h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
-}
+
+// Footer styling
 
 .footer {
   background-color: #222222;
   padding: 10px;
+    .footer-anchor-div {
+      float: right;
+      width: 50px;
+    }  
+    p {
+      font-size: 12px;
+      color: #9d9d9d;
+      margin: 0;
+        &:hover {
+          color: orange;
+        }
+    }
+    a:hover {
+      text-decoration: none;
+    }
 }
 
-.footer-text {
-  float: right;
-  width: 50px;
-}
-.footer-text p {
-  font-size: 12px;
-  color: #9d9d9d;
-}
+// < Home Page Styling END >
 
-.footer-nav p:hover {
-  color: orange;
-}
 
-a:hover {
-  text-decoration: none;
-}
+// // Responsive Media Query experiment
 
-.left-prop .fa-industry {
-  font-size: 60px;
-  color: white;
-}
+// @media only screen and (max-width: 880px) {
+//     body {
+//         // background-color: lightblue;
+//     }
+//     .header {
+//       height: 300px;
+//     }
+// }
 
-.right-prop .fa-database {
-  font-size: 60px;
-  color: white;
-}
+
+// @media only screen and (max-width: 590px) {
+//     body {
+//         // background-color: red;
+//     }
+//     .header {
+//       height: 300px;
+//     }
+// }

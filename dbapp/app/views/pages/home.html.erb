@@ -1,11 +1,10 @@
 <div class="full-home-div">  
-  <div class="header">
+  <div class="container-fluid header">
     <div id="header-text" > <!--Add an id to this div -->
       <h1>A BEGINNER'S WEB APP </h1>
       <h2> A database of random stuff</h2>
     </div>
-  </div>
-  
+  </div>  
   <div class="partner" > <!--Add a class to this div -->
     <%= link_to "#", class: "powered-brand" do %>
       <i class= "fa fa-power-off"></i>
@@ -16,25 +15,21 @@
   <div class="container-fluid main">
     <div class="row">
       <div class="col-md-12">
-          <div class= "sub-header text-center">
-            <h3> Select The Database You're Interested In </h3>
-            <p> </p>
+          <div class= "mid-header text-center">
+            <h2> Select The Database You're Interested In </h2>
           </div>
-        <div class="value-props">  
-          <div class = "prop-container">
-            <div class="prop left-prop">
-              <i class ="fa fa-industry"></i>
-              <h2>GPU Manufacturers</h2>
-              <p> Browse through a list of GPU manufacturers. </p>
-            </div>
-      
-            <div class="prop right-prop">
-              <i class ="fa fa-database"></i>
-              <h2>GPU Poducts</h2>
-              <p> Browse through a list of GPU products </p>
-            </div>
-          </div> <!-- prop-container close -->
-        </div> <!-- value-props -->
+          <div class="prop left-prop">
+            <i class ="fa fa-industry"></i>
+            <!--<h3>GPU Manufacturers</h3>-->
+            <p> Browse through a list of GPU manufacturers. </p>
+            <a href="#" class="btn btn-primary btn-lg" role="button">GPU Manufacturers</a>
+          </div>
+          <div class="prop right-prop">
+            <i class ="fa fa-database"></i>
+            <!--<h3>GPU Poducts</h3>-->
+            <p> Browse through a list of GPU products. </p>
+            <a href="#" class="btn btn-primary btn-lg" role="button">GPU Products</a>
+          </div>
       </div> <!-- col -->  
     </div> <!--row--> 
   </div> <!-- main -->
@@ -42,8 +37,8 @@
   <div class="container-fluid">
     <div class="row footer">
       <div class="col-md-12">
-        <div class ="footer-text">
-          <a class= "footer-nav" href = "#"><p> arac </p></a> 
+        <div class ="footer-anchor-div">
+          <a href = "#"><p> arac </p></a> 
         </div>
       </div>
     </div>
