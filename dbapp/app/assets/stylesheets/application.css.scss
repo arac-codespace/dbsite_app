@@ -76,6 +76,14 @@ body, html {
       border-color: orange;
     }
 }
+
+.navbar-nav {
+  padding: 4px; //Align navbar links with logo
+}
+
+.navbar-toggle {
+  margin-top: 12px;
+}
 // Logo button; Unstyled to take on inverse-nav color
 .brand-button {
   border-color: transparent;
@@ -90,22 +98,28 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -20px; // Eliminates space between navbar and heading bg pic
+  // padding-bottom: 25px; // Lowers/increases background image space
 }
 
 .heading {
+  padding: 10px 0;  //Increases the text shadow's size AND consequently the background image's size
   margin-top: 35px;
   margin-bottom: 35px;
-  background-color: rgba(1,1,1,0.2);
+  background-color: rgba(1,1,1,0.3);
   position: relative;
   top: 14%;
   color: white;
+    small {
+      color: white;
+    }
+  border-bottom: 4px solid orange;
 }
 
 // Middle partners/powered div
 .partner-row {
   padding: 10px; //Adds 20px white space
   text-align: center; // Centers text
-  border-top: 5px solid #222222;
+  border-top: 5px solid white;
   background-color: #ffffff;
     a:hover {
       text-decoration: none;
@@ -133,6 +147,7 @@ body, html {
   border: 5px solid #FFF;
   border-radius: 20px;
   padding: 40px 30px;
+  background-color: #18263a;
     .btn-primary:hover {
       background-color: orange;
     }
@@ -153,11 +168,14 @@ body, html {
 
 // Responsive Media Query experiment
 
-// @media only screen and (max-width: 880px) {
-//     body {
-//         // background-color: lightblue;
-//     }
-//     .header {
-//       height: 300px;
-//     }
-// }
+@media only screen and (max-width: 768px) {
+    .right-prop {
+      margin-bottom: 30px;
+    }
+}
+
+
+
+
+// About Page Styling
+
