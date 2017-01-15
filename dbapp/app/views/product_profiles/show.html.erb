@@ -1,0 +1,24 @@
+<div class="products-show">
+  <div class= "container">
+    <div class = "row">
+      <div class = "col-md-8 col-md-offset-2">
+        <h1 class = "text-center"> List of ... Products </h1>
+        <p class= "text-center"> The following is a list of all the product of the... family. </p>
+        <ul class = "list-unstyled">
+          <% @productlst.each do |pf| %> <!-- Goes through .all the rows stored in the ProductProfile class-->
+            <% if pf.product_family_id == @pageid.to_i %> <!-- @pageid spits the URL :id as a string.  to_i converst it to integer!-->
+              <li>
+                <div class = "text-in-well">
+                  <!--%= link_to pf do %>-->
+                    <h2> <%= pf.product_name %></h2>
+                  <!--% end %>-->
+                </div>
+              </li>
+            <% end %>  
+          <% end %>  
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

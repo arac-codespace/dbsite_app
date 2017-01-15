@@ -5,11 +5,5 @@ class PagesController < ApplicationController
   
   def about
   end
-  
-  def manufacturer
-  end
-  
-  def product
-  end
 
 end

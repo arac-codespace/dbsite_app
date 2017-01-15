@@ -1,0 +1,22 @@
+<div class="manufacturers-index">
+  <div class= "container">
+    <div class = "row">
+      <div class = "col-md-8 col-md-offset-2">
+        <h1 class = "text-center"> List of Manufacturers </h1>
+        <p class= "text-center"> The following is a list of all manufacturers currently available in our database. </p>
+        <ul class = "list-unstyled">
+          <% @manufact.each do |m|%>
+            <li>
+              <div class = "text-in-well">
+                <%= link_to m do %>
+                  <h2> <%= m.manufacturer_name %></h2>
+                <% end %>    
+              </div>
+            </li>
+          <% end %>  
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

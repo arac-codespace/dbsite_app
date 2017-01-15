@@ -1,0 +1,10 @@
++----+-----------------+----------------+
+| id | manufacturer_id | family_name    |
++----+-----------------+----------------+
+| 1  | 2               | GeForce GT     |
+| 2  | 2               | GeForce GTX    |
+| 3  | 1               | Radeon Pro Duo |
+| 4  | 1               | Radeon R9      |
+| 5  | 1               | Radeon R7      |
++----+-----------------+----------------+
+5 rows in set
